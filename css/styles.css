@@ -1,17 +1,225 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 1 | @import 'scss/_variable';
- *   |         ^^^^^^^^^^^^^^^^
- *   '
- *   scss\styles.scss 1:9  root stylesheet */
+/* styles.css */
 
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @import 'scss/_variable';\d\a   \2502          ^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\styles.scss 1:9  root stylesheet";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #ffffff;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #e74c3c;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.navbar {
+  background-color: #3498db;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.nav-item a {
+  margin: 0 20px;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-item:hover a {
+  background-color: #333;
+  color: #e74c3c;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px 0;
+}
+
+@media (max-width: 768px) {
+  .nav-list {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-item {
+    display: block;
+    text-align: center;
+  }
+
+  .nav-item:hover {
+    background-color: #333;
+  }
+
+  .menu-open .nav-list {
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+  }
+
+  .menu-open .nav-item {
+    margin: 10px 0;
+  }
+}
+
+.main-title {
+  font-size: 36px;
+  margin-top: 20px;
+}
+
+.content {
+  margin: 20px;
+}
+
+.special-offers {
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.special-offers h2 {
+  font-size: 28px;
+  color: #e74c3c;
+  margin: 20px 0;
+}
+
+.product {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px;
+  width: 300px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.product img {
+  transition: transform 0.5s ease-in-out;
+}
+
+.product-title {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.product-description {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.product-price {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.articles .product {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px;
+  width: 300px;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.articles .product img {
+  transition: transform 0.5s ease-in-out;
+}
+
+.articles .product-title {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.articles .product-description {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.articles .product-price {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.contact {
+  text-align: center;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 28px;
+  color: #e74c3c;
+  margin: 20px 0;
+}
+
+form {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.form.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+

@@ -1,3 +1,5 @@
+@import 'scss/_variable';
+@import 'scss/_mixing';
 
 * {
   margin: 0;
@@ -29,6 +31,7 @@ body {
   top: 0;
   z-index: 100;
 }
+
 
 .nav-container {
   display: flex;
@@ -222,6 +225,7 @@ h2 {
 form {
   @include fade-in;
 }
+
 
 
   

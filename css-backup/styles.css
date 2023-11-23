@@ -1,0 +1,226 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family;
+  background-color: $background-color;
+  color: $text-color;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: $secondary-color;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.navbar {
+  background-color: $primary-color;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.nav-item {
+  margin: 0 20px;
+  transition: background-color 0.3s ease;
+
+  a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+  &:hover {
+    background-color: #333;
+
+    a {
+      color: $secondary-color; // Usamos la variable
+    }
+  }
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px 0;
+}
+
+@media (max-width: 768px) {
+  .nav-list {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-item {
+    display: block;
+    text-align: center;
+  }
+
+  .nav-item:hover {
+    background-color: #333;
+  }
+
+  .menu-open .nav-list {
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+  }
+
+  .menu-open .nav-item {
+    margin: 10px 0;
+  }
+}
+
+.main-title {
+  font-size: 36px;
+  margin-top: 20px;
+}
+
+.content {
+  margin: 20px;
+}
+
+.special-offers {
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  h2 {
+    font-size: 28px;
+    color: $secondary-color; // Usamos la variable
+    margin: 20px 0;
+    @include fade-in;
+  }
+
+  .product {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    width: 300px;
+    @include scale-on-hover;
+  }
+
+  .product img {
+    @include scale-on-hover;
+  }
+
+  .product-title {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+
+  .product-description {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+
+  .product-price {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+}
+
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.articles .product {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px;
+  width: 300px;
+  @include scale-on-hover;
+  @include fade-in;
+}
+
+.articles .product img {
+  @include scale-on-hover;
+}
+
+.articles .product-title {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.articles .product-description {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.articles .product-price {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.contact {
+  text-align: center;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 28px;
+  color: $secondary-color; // Usamos la variable
+  margin: 20px 0;
+  @include fade-in;
+}
+
+form {
+  @include fade-in;
+}
+
+

@@ -1,3 +1,8 @@
+.button {
+  background-image: linear-gradient(to right, #ff0000, #00ff00);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -285,6 +290,26 @@ body {
 }
 .product img:hover {
   transform: scale(1.1);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.spinner {
+  animation: spin 2s linear infinite;
+}
+
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e40000;
+  color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */

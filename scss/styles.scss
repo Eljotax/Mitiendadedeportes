@@ -58,67 +58,74 @@ body {
   position: sticky;
   top: 0;
   z-index: 100;
-}
 
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-list {
-  list-style: none;
-  padding: 0;
-  display: flex;
-}
-
-.nav-item {
-  margin: 0 20px;
-}
-
-.nav-item a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-}
-
-.menu-toggle {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-}
-
-.bar {
-  width: 30px;
-  height: 3px;
-  background-color: #fff;
-  margin: 3px 0;
-}
-
-@media (max-width: 768px) {
-  .nav-list {
-    display: none;
-  }
-
-  .menu-toggle {
+  .nav-container {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .nav-list {
+      list-style: none;
+      padding: 0;
+      display: flex;
+
+      .nav-item {
+        margin: 0 20px;
+
+        a {
+          text-decoration: none;
+          color: #fff;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+
+      .bar {
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        margin: 3px 0;
+      }
+    }
   }
 
-  .menu-open .nav-list {
-    display: flex;
-    flex-direction: column;
-    background-color: $primary-color;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    right: 0;
-    padding: 10px;
-  }
+  @media (max-width: 768px) {
+    .nav-list {
+      display: none;
+    }
 
-  .menu-open .nav-item {
-    margin: 10px 0;
+    .menu-toggle {
+      display: flex;
+    }
+
+    .menu-open .nav-list {
+      display: flex;
+      flex-direction: column;
+      background-color: $primary-color; // Utiliza la variable $primary-color aquí
+      position: absolute;
+      top: 60px;
+      left: 0;
+      right: 0;
+      padding: 10px;
+
+      .nav-item {
+        margin: 10px 0;
+
+        a {
+          text-decoration: none;
+          color: #fff;
+          font-weight: bold;
+        }
+      }
+    }
   }
 }
+
 
 .main-title {
   font-size: 36px;

@@ -1,39 +1,58 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Metadatos -->
     <meta charset="UTF-8">
     <title>Tu Tienda Deportiva</title>
     <link rel="icon" type="image/x-icon" href="assets/img/logo.jpg"> 
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Estilos personalizados -->
     <link rel="stylesheet" type="text/css" href="csssass/styles.css">
 </head>
 <body>
+    <!-- Inicio de la sección de encabezado -->
     <header class="header">
+        <!-- Logo -->
         <img src="assets/img/logo.jpg" alt="Tu Logo" class="logo">
+        <!-- Botón de menú hamburguesa -->
+        <label for="menu-toggle" class="menu-toggle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="menu-toggle" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+            </svg>
+        </label>
+        <!-- Menú de navegación -->
         <nav class="navbar">
             <div class="nav-container">
+                <!-- Botón de menú hamburguesa en versión móvil -->
                 <div class="menu-toggle">
                     <div class="bar"></div>
                     <div class="bar"></div>
                     <div class="bar"></div>
                 </div>
+                <!-- Lista de navegación -->
                 <ul class="nav-list">
                     <li class="nav-item"><a href="index.html">Inicio</a></li>
                     <li class="nav-item"><a href="botines.html">Botines</a></li>
-                    <li class="nav-item"><a href="remeras.html">Remeras</a></li>
                     <li class="nav-item"><a href="pelotas.html">Pelotas</a></li>
+                    <li class="nav-item"><a href="nosotros.html">Nosotros</a></li>
                     <li class="nav-item"><a href="contacto.html">Contacto</a></li>
                 </ul>
             </div>
         </nav>
+        <!-- Título y subtítulo -->
         <h1 class="main-title">Bienvenido a Tu Tienda Deportiva</h1>
         <p class="subtitle">¡Descubre nuestra selección de artículos deportivos!</p>
+        <!-- Llamada a la acción -->
         <a href="#products" class="cta-button">Ver Productos</a>
     </header>
 
+    <!-- Contenido principal -->
     <main>
+        <!-- Sección de ofertas especiales -->
         <section id="products" class="special-offers">
             <h2>Ofertas Especiales</h2>
+            <!-- Producto 1 -->
             <article class="product">
                 <img src="assets/img/adidas1.jpg" alt="Botines en oferta">
                 <h3>Botines en Oferta</h3>
@@ -41,9 +60,6 @@
                 <span class="product-price">$99.99</span>
                 <a href="botines.html" class="product-link">Ver Detalles</a>
             </article>
-            
-
-            
             <article class="product">
                 <img src="assets/img/remera1.jpg" alt="Remeras de Edición Limitada">
                 <h3>Remeras de Edición Limitada</h3>
@@ -69,11 +85,13 @@
                 <span class="product-price">$19.99</span>
                 <a href="pelotas.html" class="product-link">Ver Detalles</a>
             </article>
-           
+            <!-- Más productos... -->
         </section>
 
+        <!-- Sección de novedades -->
         <section class="new-arrivals">
             <h2>Novedades</h2>
+            <!-- Producto 1 -->
             <article class="product">
                 <img src="assets/img/adidas2.jpg" alt="Nuevo Modelo de Botines">
                 <h3>Nuevo Modelo de Botines</h3>
@@ -81,8 +99,6 @@
                 <span class="product-price">$129.99</span>
                 <a href="botines.html" class="product-link">Ver Detalles</a>
             </article>
-            
-
             <article class="product">
                 <img src="assets/img/remera3.jpg" alt="Remeras de Edición Limitada">
                 <h3>Remeras de Edición Limitada</h3>
@@ -108,12 +124,14 @@
                 <span class="product-price">$24.99</span>
                 <a href="pelotas.html" class="product-link">Ver Detalles</a>
             </article>
-            
+            <!-- Más productos... -->
         </section>
     </main>
     
+    <!-- Pie de página -->
     <footer class="footer">
         <p>Derechos de autor &copy; Tu Tienda Deportiva</p>
+        <!-- Enlaces a redes sociales -->
         <ul class="social-links">
             <li><a href="#">Facebook</a></li>
             <li><a href="#">Twitter</a></li>
@@ -122,10 +140,6 @@
     </footer>
 </body>
 </html>
-
-
-
-
 
 
 

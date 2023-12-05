@@ -1,14 +1,17 @@
+/* Estilos para botones */
 .button {
   background-image: linear-gradient(to right, #ff0000, #00ff00);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+/* Reset de estilos */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Estilos generales del cuerpo del documento */
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
@@ -16,6 +19,7 @@ body {
   background-color: #f9f9f9;
 }
 
+/* Estilos del encabezado */
 .header {
   background-color: #333;
   color: #fff;
@@ -23,6 +27,7 @@ body {
   padding: 20px;
 }
 
+/* Estilos de la barra de navegación */
 .navbar {
   background-color: black;
   color: #fff;
@@ -33,34 +38,40 @@ body {
   z-index: 100;
 }
 
+/* Contenedor de navegación */
 .nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+/* Lista de navegación */
 .nav-list {
   list-style: none;
   padding: 0;
   display: flex;
 }
 
+/* Elemento de la lista de navegación */
 .nav-item {
   margin: 0 20px;
 }
 
+/* Estilos de los enlaces de navegación */
 .nav-item a {
   text-decoration: none;
   color: #fff;
   font-weight: bold;
 }
 
+/* Estilos del botón de menú hamburguesa */
 .menu-toggle {
   display: none;
   flex-direction: column;
   cursor: pointer;
 }
 
+/* Barras del icono de hamburguesa */
 .bar {
   width: 30px;
   height: 3px;
@@ -68,15 +79,19 @@ body {
   margin: 3px 0;
 }
 
+/* Estilos para dispositivos pequeños (móviles) */
 @media (max-width: 768px) {
+  /* Ocultar lista de navegación en dispositivos pequeños */
   .nav-list {
     display: none;
   }
 
+  /* Mostrar el botón de menú hamburguesa */
   .menu-toggle {
     display: flex;
   }
 
+  /* Mostrar la lista de navegación cuando el menú hamburguesa está abierto */
   .menu-open .nav-list {
     display: flex;
     flex-direction: column;
@@ -88,6 +103,7 @@ body {
     padding: 10px;
   }
 
+  /* Ajustes adicionales para la lista de navegación cuando está abierta */
   .menu-open .nav-item {
     margin: 10px 0;
   }
@@ -99,15 +115,18 @@ body {
   }
 }
 
+/* Estilos del título principal */
 .main-title {
   font-size: 36px;
   margin-top: 20px;
 }
 
+/* Contenedor principal de contenido */
 .content {
   margin: 20px;
 }
 
+/* Estilos de la sección de ofertas especiales */
 .special-offers {
   text-align: center;
   padding: 20px;
@@ -116,6 +135,7 @@ body {
   justify-content: space-between;
 }
 
+/* Estilos del título de ofertas especiales */
 .special-offers h2 {
   font-size: 28px;
   color: #333;
@@ -126,11 +146,14 @@ body {
   transform: translateY(20px);
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
+
+/* Estilos para dispositivos pequeños cuando el título es visible */
 .special-offers h2.visible {
   opacity: 1;
   transform: translateY(0);
 }
 
+/* Estilos del producto en la sección de ofertas especiales */
 .special-offers .product {
   background-color: #fff;
   border: 1px solid #ddd;
@@ -145,14 +168,19 @@ body {
   transform: translateY(20px);
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
+
+/* Efecto de escala al pasar el ratón sobre el producto de ofertas especiales */
 .special-offers .product:hover {
   transform: scale(1.1);
 }
+
+/* Estilos para dispositivos pequeños cuando el producto es visible */
 .special-offers .product.visible {
   opacity: 1;
   transform: translateY(0);
 }
 
+/* Estilos de la imagen del producto en ofertas especiales */
 .special-offers .product img {
   max-width: 100%;
   height: auto;
@@ -160,26 +188,275 @@ body {
   transform: scale(1);
   transition: transform 0.5s ease-in-out;
 }
+
+/* Efecto de escala al pasar el ratón sobre la imagen del producto en ofertas especiales */
 .special-offers .product img:hover {
   transform: scale(1.1);
 }
 
+/* Estilos del título del producto en ofertas especiales */
 .special-offers .product-title {
   font-size: 24px;
   margin: 10px 0;
 }
 
+/* Estilos de la descripción del producto en ofertas especiales */
 .special-offers .product-description {
   font-size: 16px;
   margin: 10px 0;
 }
 
+/* Estilos del precio del producto en ofertas especiales */
 .special-offers .product-price {
   font-size: 20px;
   font-weight: bold;
   margin: 10px 0;
 }
 
+/* Estilos de la sección de novedades */
+.new-arrivals {
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Estilos del título de novedades */
+.new-arrivals h2 {
+  font-size: 28px;
+  color: #333;
+  margin: 20px 0;
+  width: 100%;
+  text-align: center;
+  opacity: 1;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+/* Estilos para dispositivos pequeños cuando el título de novedades es visible */
+.new-arrivals h2.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Estilos del producto en la sección de novedades */
+.new-arrivals .product {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  margin-bottom: 20px;
+  transform: scale(1);
+  transition: transform 0.5s ease-in-out;
+  opacity: 1;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+/* Efecto de escala al pasar el ratón sobre el producto de novedades */
+.new-arrivals .product:hover {
+  transform: scale(1.1);
+}
+
+/* Estilos para dispositivos pequeños cuando el producto de novedades es visible */
+.new-arrivals .product.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Estilos de la imagen del producto en novedades */
+.new-arrivals .product img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  transform: scale(1);
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Efecto de escala al pasar el ratón sobre la imagen del producto en novedades */
+.new-arrivals .product img:hover {
+  transform: scale(1.1);
+}
+
+/* Estilos del título del producto en novedades */
+.new-arrivals .product-title {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+/* Estilos de la descripción del producto en novedades */
+.new-arrivals .product-description {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+/* Estilos del precio del producto en novedades */
+.new-arrivals .product-price {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* Estilos de los artículos en general */
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+/* Estilos del producto en los artículos */
+.articles .product {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  margin-bottom: 20px;
+  transform: scale(1);
+  transition: transform 0.5s ease-in-out;
+  opacity: 1;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+/* Efecto de escala al pasar el ratón sobre el producto en los artículos */
+.articles .product:hover {
+  transform: scale(1.1);
+}
+
+/* Estilos para dispositivos pequeños cuando el producto en los artículos es visible */
+.articles .product.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Estilos de la imagen del producto en los artículos */
+.articles .product img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  transform: scale(1);
+  transition: transform 0.5s ease-in-out;
+  max-height: 200px;
+  max-width: 100px;
+}
+
+/* Efecto de escala al pasar el ratón sobre la imagen del producto en los artículos */
+.articles .product img:hover {
+  transform: scale(1.1);
+}
+
+/* Estilos del título del producto en los artículos */
+.articles .product-title {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+/* Estilos de la descripción del producto en los artículos */
+.articles .product-description {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+/* Estilos del precio del producto en los artículos */
+.articles .product-price {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* Estilos del pie de página */
+.footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Estilos de la sección de contacto */
+.contact {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Estilos del título de la sección de contacto */
+.contact h2 {
+  font-size: 28px;
+  color: #333;
+  margin: 20px 0;
+  opacity: 1;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+/* Estilos para dispositivos pequeños cuando el título de la sección de contacto es visible */
+.contact h2.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Estilos del formulario de la sección de contacto */
+.contact form {
+  opacity: 1;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.contact form.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* Estilos de la sección de contacto */
+.contact h2 {
+  font-size: 28px;
+  color: #000;
+  margin: 20px 0;
+}
+
+.contact article {
+  text-align: left;
+}
+
+.contact article p {
+  margin-bottom: 10px;
+}
+
+/* Estilos del formulario de contacto */
+.contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact label {
+  margin: 10px 0 5px;
+}
+
+.contact input,
+.contact textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.contact button {
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background-color: #333;
+}
+
+
+/* Estilos generales */
 .articles {
   display: flex;
   flex-wrap: wrap;
@@ -201,9 +478,11 @@ body {
   transform: translateY(20px);
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
+
 .articles .product:hover {
   transform: scale(1.1);
 }
+
 .articles .product.visible {
   opacity: 1;
   transform: translateY(0);
@@ -218,92 +497,12 @@ body {
   max-height: 200px;
   max-width: 100px;
 }
+
 .articles .product img:hover {
   transform: scale(1.1);
 }
 
-.articles .product-title {
-  font-size: 24px;
-  margin: 10px 0;
-}
-
-.articles .product-description {
-  font-size: 16px;
-  margin: 10px 0;
-}
-
-.articles .product-price {
-  font-size: 20px;
-  font-weight: bold;
-  margin: 10px 0;
-}
-
-.footer {
-  background-color: #000;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-}
-
-.contact {
-  text-align: center;
-  padding: 20px;
-}
-.contact h2 {
-  font-size: 28px;
-  color: #333;
-  margin: 20px 0;
-  opacity: 1;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-}
-.contact h2.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-.contact form {
-  opacity: 1;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-}
-.contact form.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.product {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  text-align: center;
-  padding: 20px;
-  width: 100%;
-  margin-bottom: 20px;
-  transform: scale(1);
-  transition: transform 0.5s ease-in-out;
-  opacity: 1;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-}
-.product:hover {
-  transform: scale(1.1);
-}
-.product.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.product img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 10px;
-  transform: scale(1);
-  transition: transform 0.5s ease-in-out;
-}
-.product img:hover {
-  transform: scale(1.1);
-}
-
+/* Animación de giro */
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -312,16 +511,23 @@ body {
     transform: rotate(360deg);
   }
 }
+
+/* Estilos para el spinner */
 .spinner {
   animation: spin 2s linear infinite;
 }
 
-.button {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  background-color: #e40000;
-  color: white;
+.nosotros h2 {
+  font-size: 28px;
+  color: #000;
+  margin: 20px 0;
 }
+
+.nosotros p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
 
 /*# sourceMappingURL=styles.css.map */

@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <!-- Estilos personalizados -->
-    <link rel="stylesheet" type="text/css" href="csssass/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
     <!-- Inicio de la sección de encabezado -->
@@ -16,30 +16,33 @@
         <!-- Logo -->
         <img src="assets/img/logo.jpg" alt="Tu Logo" class="logo">
         <!-- Botón de menú hamburguesa -->
-        <label for="menu-toggle" class="menu-toggle">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="menu-toggle" viewBox="0 0 16 16">
+        <label for="label-hamburguesa" class="label-hamburguesa">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="list_icon" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
             </svg>
         </label>
+        <input class="menu-toggle" type="checkbox" id="menu-toggle">
         <!-- Menú de navegación -->
-        <nav class="navbar">
-            <div class="nav-container">
-                <!-- Botón de menú hamburguesa en versión móvil -->
-                <div class="menu-toggle">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                </div>
-                <!-- Lista de navegación -->
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="index.html">Inicio</a></li>
-                    <li class="nav-item"><a href="botines.html">Botines</a></li>
-                    <li class="nav-item"><a href="pelotas.html">Pelotas</a></li>
-                    <li class="nav-item"><a href="nosotros.html">Nosotros</a></li>
-                    <li class="nav-item"><a href="contacto.html">Contacto</a></li>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+              <!-- Botón de menú hamburguesa en versión móvil -->
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          
+              <!-- Lista de navegación -->
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                  <li class="nav-item"><a class="nav-link" href="botines.html">Botines</a></li>
+                  <li class="nav-item"><a class="nav-link" href="pelotas.html">Pelotas</a></li>
+                  <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                  <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
                 </ul>
+              </div>
             </div>
-        </nav>
+          </nav>
+          
         <!-- Título y subtítulo -->
         <h1 class="main-title">Bienvenido a Tu Tienda Deportiva</h1>
         <p class="subtitle">¡Descubre nuestra selección de artículos deportivos!</p>
@@ -52,82 +55,89 @@
         <!-- Sección de ofertas especiales -->
         <section id="products" class="special-offers">
             <h2>Ofertas Especiales</h2>
+            
             <!-- Producto 1 -->
             <article class="product">
                 <img src="assets/img/adidas1.jpg" alt="Botines en oferta">
                 <h3>Botines en Oferta</h3>
                 <p>¡Obtén tus botines favoritos con un 20% de descuento!</p>
-                <span class="product-price">$99.99</span>
+                <span class="product-price">$41.999</span>
                 <a href="botines.html" class="product-link">Ver Detalles</a>
             </article>
+        
+            <!-- Producto 2 -->
             <article class="product">
                 <img src="assets/img/remera1.jpg" alt="Remeras de Edición Limitada">
                 <h3>Remeras de Edición Limitada</h3>
                 <p>Descubre nuestras remeras de edición limitadas.</p>
-                <span class="product-price">$39.99</span>
-                <a href="remeras.html" class="product-link">Ver Detalles</a>
+                <span class="product-price">$29.999</span>
             </article>
-            
-
+        
+            <!-- Producto 3 -->
             <article class="product">
                 <img src="assets/img/botinnikegris.jpg" alt="Botines de Edición Limitada">
                 <h3>Botines de Edición Limitada</h3>
                 <p>Descubre nuestras remeras de edición limitadas.</p>
-                <span class="product-price">$39.99</span>
-                <a href="remeras.html" class="product-link">Ver Detalles</a>
+                <span class="product-price">$69.999</span>
+                <a href="botines.html" class="product-link">Ver Detalles</a>
             </article>
-            
-
+        
+            <!-- Producto 4 -->
             <article class="product">
                 <img src="assets/img/pelota3.jpg" alt="Pelotas de Alta Calidad">
                 <h3>Pelotas de Alta Calidad</h3>
                 <p>Las mejores pelotas para tus partidos.</p>
-                <span class="product-price">$19.99</span>
+                <span class="product-price">$19.999</span>
                 <a href="pelotas.html" class="product-link">Ver Detalles</a>
             </article>
-            <!-- Más productos... -->
-        </section>
-
-        <!-- Sección de novedades -->
-        <section class="new-arrivals">
-            <h2>Novedades</h2>
-            <!-- Producto 1 -->
+        
+            <!-- Producto 5 -->
             <article class="product">
-                <img src="assets/img/adidas2.jpg" alt="Nuevo Modelo de Botines">
-                <h3>Nuevo Modelo de Botines</h3>
-                <p>¡Nuevo modelo de botines ahora disponibles!</p>
-                <span class="product-price">$129.99</span>
+                <img src="assets/img/puma2.jpg" alt="">
+                <h3>Botines de Edición Limitada</h3>
+                <p>Descubre nuestras remeras de edición limitadas.</p>
+                <span class="product-price">$49.999</span>
                 <a href="botines.html" class="product-link">Ver Detalles</a>
             </article>
+        
+            <!-- Producto 6 -->
             <article class="product">
-                <img src="assets/img/remera3.jpg" alt="Remeras de Edición Limitada">
-                <h3>Remeras de Edición Limitada</h3>
+                <img src="assets/img/puma2.jpg" alt="">
+                <h3>Botines de Edición Limitada</h3>
                 <p>Descubre nuestras remeras de edición limitadas.</p>
-                <span class="product-price">$39.99</span>
-                <a href="remeras.html" class="product-link">Ver Detalles</a>
+                <span class="product-price">$39.999</span>
+                <a href="botines.html" class="product-link">Ver Detalles</a>
             </article>
-           
-
+        
+            <!-- Producto 7 -->
             <article class="product">
-                <img src="assets/img/remera2.jpg" alt="Remeras de Edición Limitada">
-                <h3>Remeras de Edición Limitada</h3>
-                <p>Descubre nuestras remeras de edición limitadas.</p>
-                <span class="product-price">$39.99</span>
-                <a href="remeras.html" class="product-link">Ver Detalles</a>
+                <img src="assets/img/puma2.jpg" alt="">
+                <h3>Botines para partidos intensos!</h3>
+                <p>Descucbre nuestros botines mas modernos aqui!</p>
+                <span class="product-price">$45.000</span>
+                <a href="botines.html" class="product-link">Ver Detalles</a>
             </article>
-            
-
+        
+            <!-- Producto 8 -->
             <article class="product">
-                <img src="assets/img/pelota5.jpg" alt="Nuevas Pelotas en Stock">
-                <h3>Nuevas Pelotas en Stock</h3>
-                <p>Amplia variedad de pelotas de fútbol y baloncesto.</p>
-                <span class="product-price">$24.99</span>
+                <img src="assets/img/pelotaumbro.jpg" alt="">
+                <h3>Pelotas increibles a precios increibles!</h3>
+                <p>Descubre nuestras Pelotas de calidad extrema.</p>
+                <span class="product-price">$70.000</span>
                 <a href="pelotas.html" class="product-link">Ver Detalles</a>
             </article>
-            <!-- Más productos... -->
+        
+            <!-- Producto 9 -->
+            <article class="product">
+                <img src="assets/img/nike2.jpg" alt="">
+                <h3>Botines de Altisima calidad solo en TodoDeportes</h3>
+                <p>Pruebate estos increibles botines y ve la diferencia en el campo!</p>
+                <span class="product-price">$120.000</span>
+                <a href="botines.html" class="product-link">Ver Detalles</a>
+            </article>
         </section>
     </main>
-    
+   
     <!-- Pie de página -->
     <footer class="footer">
         <p>Derechos de autor &copy; Tu Tienda Deportiva</p>

@@ -6,39 +6,54 @@
         <title>Contacto - Tu Tienda Deportiva</title>
         <link rel="icon" type="image/x-icon" href="assets/img/logo.jpg"> 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="csssass/styles.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
     </head>
 <body>
     <header class="header">
+        <!-- Logo -->
         <img src="assets/img/logo.jpg" alt="Tu Logo" class="logo">
-        <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
-        <label for="menu-toggle" class="menu-toggle-label">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
+        <!-- Botón de menú hamburguesa -->
+        <label for="label-hamburguesa" class="label-hamburguesa">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="list_icon" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+            </svg>
         </label>
-        <nav class="navbar">
-            <div class="nav-container">
-                <div class="menu-toggle">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                </div>
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="index.html">Inicio</a></li>
-                    <li class="nav-item"><a href="botines.html">Botines</a></li>
-                    <li class="nav-item"><a href="remeras.html">Remeras</a></li>
-                    <li class="nav-item"><a href="pelotas.html">Pelotas</a></li>
-                    <li class="nav-item"><a href="contacto.html">Contacto</a></li>
-                    <li class="nav-item"><a href="nosotros.html">Nosotros</a></li>
+        <input class="menu-toggle" type="checkbox" id="menu-toggle">
+        <!-- Menú de navegación -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+              <!-- Botón de menú hamburguesa en versión móvil -->
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          
+              <!-- Lista de navegación -->
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                  <li class="nav-item"><a class="nav-link" href="botines.html">Botines</a></li>
+                  <li class="nav-item"><a class="nav-link" href="pelotas.html">Pelotas</a></li>
+                  <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                  <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
                 </ul>
+              </div>
             </div>
-        </nav>
-        <h1 class="main-title">Sobre Nosotros</h1>
+          </nav>
+          
+        <!-- Título y subtítulo -->
+        <h1 class="main-title">Bienvenido a Tu Tienda Deportiva</h1>
+        <p class="subtitle">¡Descubre nuestra selección de artículos deportivos!</p>
+        <!-- Llamada a la acción -->
+        <a href="#products" class="cta-button">Ver Productos</a>
     </header>
 
     <main class="content nosotros">
         <section>
+            
+            <section>
+                <img src="assets/img/banner.jpg" alt="Banner de fubol" class="banner-image">
+                </section>
+            </section>
             <h2>Nuestra Historia</h2>
             <p>
                 Tu Tienda Deportiva fue fundada en el año 2005 por un grupo apasionado por los deportes
@@ -55,11 +70,21 @@
                 desde botines de última generación hasta las camisetas de tus equipos favoritos. Nuestro equipo
                 sigue comprometido con la excelencia y la satisfacción del cliente.
             </p>
-        </section>
+           
+            <div class="google-map">
+                <h2>Encontranos en Recta Martinolli 6450</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3407.390283997993!2d-64.25859952430625!3d-31.34820759295892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329ea5d71b5437%3A0x5bdd6148c36b6ac8!2sAv.%20Recta%20Martinolli%206540%2C%20X5021%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1702070618142!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
     </main>
 
     <footer class="footer">
-        <p>&copy; Tu Tienda Deportiva</p>
+        <p>Derechos de autor &copy; Tu Tienda Deportiva</p>
+        <!-- Enlaces a redes sociales -->
+        <ul class="social-links">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
     </footer>
 </body>
 </html>

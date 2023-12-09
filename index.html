@@ -16,22 +16,22 @@
         <!-- Logo -->
         <img src="assets/img/logo.jpg" alt="Tu Logo" class="logo">
         <!-- Botón de menú hamburguesa -->
-        <label for="label-hamburguesa" class="label-hamburguesa">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="list_icon" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-            </svg>
-        </label>
-        <input class="menu-toggle" type="checkbox" id="menu-toggle">
-        <!-- Menú de navegación -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
             <div class="container">
               <!-- Botón de menú hamburguesa en versión móvil -->
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-          
+              <input type="checkbox" id="nav__checkbox" class="nav__checkbox">
+            <label for="nav__checkbox" class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            
+              <img src="https://img.icons8.com/material-outlined/30/000000/menu--v1.png" class="navbar-toggler-icon hamburger" />
+              <img src="https://img.icons8.com/plumpy/30/000000/x.png" class="navbar-toggler-icon close" />
+            </label>
+            </div>
               <!-- Lista de navegación -->
-              <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                   <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
                   <li class="nav-item"><a class="nav-link" href="botines.html">Botines</a></li>
@@ -39,9 +39,9 @@
                   <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
                   <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
                 </ul>
-              </div>
+              
             </div>
-          </nav>
+        </nav>
           
         <!-- Título y subtítulo -->
         <h1 class="main-title">Bienvenido a Tu Tienda Deportiva</h1>
@@ -93,16 +93,16 @@
         
             <!-- Producto 5 -->
             <article class="product">
-                <img src="assets/img/puma2.jpg" alt="">
-                <h3>Botines de Edición Limitada</h3>
-                <p>Descubre nuestras remeras de edición limitadas.</p>
+                <img src="assets/img/puma2.jpg" alt="Botines Puma Borussia Negros">
+                <h3>Botines Puma Borussia Negros</h3>
+                <p>Botines puma de alta calidad</p>
                 <span class="product-price">$49.999</span>
                 <a href="botines.html" class="product-link">Ver Detalles</a>
             </article>
         
             <!-- Producto 6 -->
             <article class="product">
-                <img src="assets/img/puma2.jpg" alt="">
+                <img src="assets/img/botines1.jpg" alt="Botines Adidas verdes de alta calidad">
                 <h3>Botines de Edición Limitada</h3>
                 <p>Descubre nuestras remeras de edición limitadas.</p>
                 <span class="product-price">$39.999</span>
@@ -111,8 +111,8 @@
         
             <!-- Producto 7 -->
             <article class="product">
-                <img src="assets/img/puma2.jpg" alt="">
-                <h3>Botines para partidos intensos!</h3>
+                <img src="assets/img/botines2.jpg" alt="Botines Puma Azules y Naranjas">
+                <h3>Botines Puma Azules y Naranjas</h3>
                 <p>Descucbre nuestros botines mas modernos aqui!</p>
                 <span class="product-price">$45.000</span>
                 <a href="botines.html" class="product-link">Ver Detalles</a>
@@ -120,8 +120,8 @@
         
             <!-- Producto 8 -->
             <article class="product">
-                <img src="assets/img/pelotaumbro.jpg" alt="">
-                <h3>Pelotas increibles a precios increibles!</h3>
+                <img src="assets/img/pelota6.jpg" alt="Pelota Nike Amarilla">
+                <h3>Pelota Nike Amarilla</h3>
                 <p>Descubre nuestras Pelotas de calidad extrema.</p>
                 <span class="product-price">$70.000</span>
                 <a href="pelotas.html" class="product-link">Ver Detalles</a>
@@ -129,8 +129,8 @@
         
             <!-- Producto 9 -->
             <article class="product">
-                <img src="assets/img/nike2.jpg" alt="">
-                <h3>Botines de Altisima calidad solo en TodoDeportes</h3>
+                <img src="assets/img/botines3.jpg" alt="Botines Puma Verdes Futuristas">
+                <h3>Botines Puma Verdes Futuristas</h3>
                 <p>Pruebate estos increibles botines y ve la diferencia en el campo!</p>
                 <span class="product-price">$120.000</span>
                 <a href="botines.html" class="product-link">Ver Detalles</a>

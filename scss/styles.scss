@@ -23,6 +23,9 @@ body {
   padding: 20px;
 }
 
+.checkbox {
+  display: none;
+}
 /* Estilos de la barra de navegación */
 .navbar {
   background-color: black;
@@ -94,7 +97,7 @@ body {
 }
 
 .nav-link {
-  font-size: 3rem;
+  font-size: 2.3rem;
   color: #ddd;
   font-weight: bold;
 }
@@ -189,6 +192,8 @@ body {
   transition: transform 0.5s ease-in-out;
   max-height: 200px;
   max-width: 100px;
+  padding: 1rem 1rem;
+  margin: 1rem 1rem;
 }
 
 /* Efecto de escala al pasar el ratón sobre la imagen del producto en ofertas especiales */

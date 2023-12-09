@@ -21,14 +21,21 @@
         <input class="menu-toggle" type="checkbox" id="menu-toggle">
         <!-- Menú de navegación -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
             <div class="container">
               <!-- Botón de menú hamburguesa en versión móvil -->
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-          
+              <input type="checkbox" id="nav__checkbox" class="nav__checkbox">
+            <label for="nav__checkbox" class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            
+              <img src="https://img.icons8.com/material-outlined/30/000000/menu--v1.png" class="navbar-toggler-icon hamburger" />
+              <img src="https://img.icons8.com/plumpy/30/000000/x.png" class="navbar-toggler-icon close" />
+            </label>
+            </div>
               <!-- Lista de navegación -->
-              <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                   <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
                   <li class="nav-item"><a class="nav-link" href="botines.html">Botines</a></li>
@@ -36,9 +43,9 @@
                   <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
                   <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
                 </ul>
-              </div>
+              
             </div>
-          </nav>
+        </nav>
           
         <!-- Título y subtítulo -->
         <h1 class="main-title">Bienvenido a Tu Tienda Deportiva</h1>
@@ -54,40 +61,79 @@
                 <img src="assets/img/puma2.jpg" alt="Oferta Botines Puma" title="Oferta Botines Puma">
                 <h3>Oferta de Botines Puma</h3>
                 <p>¡30% OFF!</p>
+                <p class="product-price">$30.000</p>
             </article>
             <article class="product">
                 <img src="assets/img/adidas3.jpg" alt="Oferta Botines Adidas" title="Oferta Botines Adidas">
                 <h3>Oferta de Botines Adidas</h3>
                 <p>¡Llevando una remera obtienes una oferta increíble del 50% de descuento en estos botines!</p>
+                <p class="product-price">$69.999</p>
             </article>
-        </section>
+        
 
-        <section class="special-offers">
+        
             <article class="product">
               <img src="assets/img/puma1.jpg" alt="Botín Puma" title="Botines Puma">
               <h2 class="product-title">Botín de Fútbol Modelo Puma</h2>
               <p class="product-description">Diseño de última generación para un mejor rendimiento en la cancha.</p>
               <p class="product-price">$50.000</p>
             </article>
-        </section>
+        
 
-        <section class="special-offers">
+        
             <article class="product">
              <img src="assets/img/adidas2.jpg" alt="Botín Adidas" title="Botines Adidas">
              <h2 class="product-title">Botín de Fútbol Modelo Adidas</h2>
              <p class="product-description">Ideal para un control preciso y velocidad.</p>
              <p class="product-price">$70.000</p>
             </article>
-        </section>
+        
 
-        <section class="special-offers">
+        
             <article class="product">
              <img src="assets/img/nike2.jpg" alt="Botín Nike" title="Botines Nike">
              <h2 class="product-title">Botín de Fútbol Modelo Nike</h2>
              <p class="product-description">Materiales de alta calidad para una mayor durabilidad.</p>
              <p class="product-price">$109.000</p>
             </article>
+        
+
+        
+            <article class="product">
+              <img src="assets/img/botines1.jpg" alt="Botines Adidas Verdes y Blancos" title="Botines Adidas Verdes y Blancos">
+              <h2 class="product-title">Botines Adidas Verdes y Blancos</h2>
+              <p class="product-description">Botines de alta calidad</p>
+              <p class="product-price">$79.999</p>
+            </article>
+        
+
+        
+            <article class="product">
+              <img src="assets/img/botines2.jpg" alt="Botín Puma Azules y Naranjas" title="Botín Puma Azules y Naranjas">
+              <h2 class="product-title">Botín Puma Azules y Naranjas</h2>
+              <p class="product-description">Diseñados para dar tu mejor rendimiento en la cancha!</p>
+              <p class="product-price">$80.000</p>
+            </article>
+        
+
+        
+            <article class="product">
+              <img src="assets/img/botines3.jpg" alt="Botín Puma Verdes Futuristas" title="Botín Puma Verdes Futuristas">
+              <h2 class="product-title">Botín Puma Verdes Futuristas</h2>
+              <p class="product-description">Con diseño futurista pensando en tu bienestar!</p>
+              <p class="product-price">$100.000</p>
+            </article>
+       
+
+        
+            <article class="product">
+              <img src="assets/img/botines4.jpg" alt="Botín Puma Azules " title="Botines Puma Azules">
+              <h2 class="product-title">Botín de Fútbol Modelo Puma Azules</h2>
+              <p class="product-description">Los que usa neymar!!</p>
+              <p class="product-price">$120.000</p>
+            </article>
         </section>
+        
     </main>
 
     <footer class="footer">

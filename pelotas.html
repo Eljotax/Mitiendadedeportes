@@ -21,14 +21,20 @@
         <input class="menu-toggle" type="checkbox" id="menu-toggle">
         <!-- Menú de navegación -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
             <div class="container">
               <!-- Botón de menú hamburguesa en versión móvil -->
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-          
+              <input type="checkbox" id="nav__checkbox" class="nav__checkbox">
+            <label for="nav__checkbox" class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <img src="https://img.icons8.com/material-outlined/30/000000/menu--v1.png" class="navbar-toggler-icon hamburger" />
+              <img src="https://img.icons8.com/plumpy/30/000000/x.png" class="navbar-toggler-icon close" />
+            </label>
+            </div>
               <!-- Lista de navegación -->
-              <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                   <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
                   <li class="nav-item"><a class="nav-link" href="botines.html">Botines</a></li>
@@ -36,9 +42,9 @@
                   <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
                   <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
                 </ul>
-              </div>
+              
             </div>
-          </nav>
+        </nav>
           
         <!-- Título y subtítulo -->
         <h1 class="main-title">Bienvenido a Tu Tienda Deportiva</h1>
@@ -60,27 +66,57 @@
                 <h3>Oferta de Pelota de Futbol</h3>
                 <p>¡Lleva dos pelotas Nike al precio de una!</p>
             </article>
-        </section>
+        
+            <article class="product">
+                <img src="assets/img/pelotamundial.jpg" alt="Pelota Blanca con rayas negras marca Nessau" title="Pelota Nassau">
+                <h2 class="product-title">Pelota de Fútbol </h2>
+                <p class="product-description">Diseñada para un control y precisión excepcionales.</p>
+                <p class="product-price">$27.000</p>
+            </article>
 
-        <section class="product">
-            <img src="assets/img/pelotamundial.jpg" alt="Pelota Blanca con rayas negras marca Nessau" title="Pelota Nassau">
-            <h2 class="product-title">Pelota de Fútbol </h2>
-            <p class="product-description">Diseñada para un control y precisión excepcionales.</p>
-            <p class="product-price">$27.000</p>
-        </section>
+            <article class="product">
+                <img src="assets/img/pelotareal.jpg" alt="Pelota Nike" title="Pelota Nike">
+                <h2 class="product-title">Pelota de Futbol Nike</h2>
+                <p class="product-description">Perfecta para partidos de alto rendimiento.</p>
+                <p class="product-price">$35.000</p>
+            </article>
 
-        <section class="product">
-            <img src="assets/img/pelotareal.jpg" alt="Pelota Nike" title="Pelota Nike">
-            <h2 class="product-title">Pelota de Futbol Nike</h2>
-            <p class="product-description">Perfecta para partidos de alto rendimiento.</p>
-            <p class="product-price">$35.000</p>
-        </section>
-
-        <section class="product">
-            <img src="assets/img/pelotaumbro.jpg" alt="Pelota Umbro" title="Pelota Umbro">
-            <h2 class="product-title">Pelota de Futbol Umbro</h2>
-            <p class="product-description">Construida para un juego rápido y duradero.</p>
-            <p class="product-price">$15.000</p>
+            <article class="product">
+                <img src="assets/img/pelotaumbro.jpg" alt="Pelota Umbro" title="Pelota Umbro">
+                <h2 class="product-title">Pelota de Futbol Umbro</h2>
+                <p class="product-description">Construida para un juego rápido y duradero.</p>
+                <p class="product-price">$15.000</p>
+            </article>
+            <article class="product">
+                <img src="assets/img/pelota7.jpg" alt="Pelota De Spiderman" title="Pelota De Spiderman">
+                <h2 class="product-title">Pelota de Futbol Spiderman</h2>
+                <p class="product-description">Ideal para niños!</p>
+                <p class="product-price">$25.000</p>
+            </article>
+            <article class="product">
+                <img src="assets/img/pelotas8.jpg" alt="Pelota Nike Blanca con naranja" title="Pelota Nike Blanca con naranja">
+                <h2 class="product-title">Pelota de Futbol Nike</h2>
+                <p class="product-description">Con los mejoras materiales y mas duraderos!</p>
+                <p class="product-price">$23.000</p>
+            </article>
+            <article class="product">
+                <img src="assets/img/pelota9.jpg" alt="Pelota Nike Gris" title="Pelota Nike Gris">
+                <h2 class="product-title">Pelota de Futbol Nike</h2>
+                <p class="product-description">Ideal para tus partidos con cualquier clima</p>
+                <p class="product-price">$24.000</p>
+            </article>
+            <article class="product">
+                <img src="assets/img/pelota10.jpg" alt="Pelota Puma Negra" title="Pelota Puma Negra">
+                <h2 class="product-title">Pelota de Futbol Puma Negra</h2>
+                <p class="product-description">Pelota economica ideal para cuidar el bolsillo!</p>
+                <p class="product-price">$17.000</p>
+            </article>
+            <article class="product">
+                <img src="assets/img/pelota11.jpg" alt="Pelota mundial 2010" title="Pelota mundial 2010">
+                <h2 class="product-title">Pelota mundial 2010</h2>
+                <p class="product-description">Pelota utilizada por ronaldinho en el mundial 2010!</p>
+                <p class="product-price">$33.000</p>
+            </article>
         </section>
     </main>
 
